@@ -109,7 +109,7 @@ export default function Header() {
                       >
                         Кубок России 
                       </Link>
-                                            <Link
+                      <Link
                         to="/champ_sfo"
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
@@ -144,25 +144,13 @@ export default function Header() {
                   {openFederation && (
                     <div className="absolute left-0 mt-2 w-48 bg-blue-800 text-white border rounded shadow-md z-50">
                       <Link
-                        to="/lfl"
-                        className="block px-4 py-2 hover:bg-blue-400"
-                      >
-                        Новогодний турнир
-                      </Link>
-                      <Link
-                        to="/dfl"
-                        className="block px-4 py-2 hover:bg-blue-400"
-                      >
-                        Турнир посвященный, Дню Победы
-                      </Link>
-                      <Link
                         to="/league"
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         ЛФЛ Омск
                       </Link>
                       <Link
-                        to="/league"
+                        to="/dfl"
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         Первенство ДФЛ Омск

@@ -23,7 +23,7 @@ export default function Contacts() {
               className="flex items-center gap-3 p-4 bg-gray-100 rounded-xl shadow-md hover:bg-blue-50 hover:scale-105 transition transform"
             >
               <FaVk className="text-blue-600 text-4xl" />
-              <span className="font-medium text-lg">Официальная страница АНО «ОФлК «Сибирь» в VK</span>
+              <span className="font-medium text-lg">Официальная страница в VK</span>
             </a>
 
             <a
@@ -33,7 +33,7 @@ export default function Contacts() {
               className="flex items-center gap-3 p-4 bg-gray-100 rounded-xl shadow-md hover:bg-blue-50 hover:scale-105 transition transform"
             >
               <FaVk className="text-blue-800 text-4xl" />
-              <span className="font-medium text-lg">Официальная страница ФФОО в VK</span>
+              <span className="font-medium text-lg">Официальная группа в VK</span>
             </a>
 
             <a
@@ -43,7 +43,7 @@ export default function Contacts() {
               className="flex items-center gap-3 p-4 bg-gray-100 rounded-xl shadow-md hover:bg-blue-50 hover:scale-105 transition transform"
             >
               <FaTelegramPlane className="text-sky-500 text-4xl" />
-              <span className="font-medium text-lg">Официальная страница АНО «ОФлК «Сибирь» в Telegram</span>
+              <span className="font-medium text-lg">Официальная страница в Telegram</span>
             </a>
 
             <a
@@ -53,7 +53,7 @@ export default function Contacts() {
               className="flex items-center gap-3 p-4 bg-gray-100 rounded-xl shadow-md hover:bg-blue-50 hover:scale-105 transition transform"
             >
               <FaYoutube className="text-red-600 text-4xl" />
-              <span className="font-medium text-lg">Официальный YouTube-канал АНО «ОФлК «Сибирь»</span>
+              <span className="font-medium text-lg">Официальный YouTube-канал</span>
             </a>
 
             <a
@@ -61,7 +61,7 @@ export default function Contacts() {
               className="flex items-center gap-3 p-4 bg-gray-100 rounded-xl shadow-md hover:bg-blue-50 hover:scale-105 transition transform"
             >
               <FaEnvelope className="text-orange-500 text-4xl" />
-              <span className="font-medium text-lg">Почта ФФОО: ffoo55@mail.ru</span>
+              <span className="font-medium text-lg">Почта: ffoo55@mail.ru</span>
             </a>
           </div>
         </div>
