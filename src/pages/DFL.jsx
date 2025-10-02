@@ -219,7 +219,7 @@ export default function League() {
         {/* Регламент */}
         <div>
           <h2 className="text-4xl font-extrabold text-blue-800 drop-shadow-md mb-6">Регламент</h2>
-          <p className="max-w-4xl mx-auto text-lg text-gray-700">Здесь будет документ с правилами проведения соревнований. Можно загрузить PDF или встроить текст.</p>
+          <p className="max-w-4xl mx-auto text-lg text-gray-700">Здесь добавим текст регламента.</p>
         </div>
       </div>
     </div>
