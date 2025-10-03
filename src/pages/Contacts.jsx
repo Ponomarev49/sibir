@@ -69,7 +69,7 @@ export default function Contacts() {
         {/* Правая колонка — фото */}
         <div className="flex justify-center">
           <img
-            src="../players/президент.jpg"
+            src="assets/players/президент.jpg"
             alt="Брюханов Дмитрий Сергеевич"
             className="w-full max-w-[600px] rounded-lg shadow-lg hover:scale-105 transition duration-300"
           />
