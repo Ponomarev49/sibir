@@ -25,7 +25,7 @@ export default function Header() {
             <div className="flex items-center space-x-4">
               <Link to="/" className="flex items-center">
                 <img
-                  src="/logo.png"
+                  src="/logos/logo.png"
                   alt="Сибирь"
                   className="h-14 sm:h-16 md:h-20 w-auto object-contain"
                 />
@@ -39,7 +39,7 @@ export default function Header() {
                   className=""
                 >
                   <img
-                    src="/vk.png"
+                    src="/logos/vk.png"
                     alt="VK"
                     className="h-6 sm:h-6 md:h-8 w-auto object-contain"
                   />
@@ -50,7 +50,7 @@ export default function Header() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="/tg.png"
+                    src="/logos/tg.png"
                     alt="Telegram"
                     className="h-6 sm:h-6 md:h-8 w-auto object-contain invert"
                   />
@@ -200,12 +200,12 @@ export default function Header() {
             {/* Правый блок: НФФР (только десктоп) */}
             <div className="hidden sm:flex items-center space-x-4">
               <a
-                href="https://xn--m1agla.xn--p1ai/"
+                href="https://mdms.omskportal.ru/oiv/mdms"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/gerb_omsk.png"
+                  src="/logos/gerb_omsk.png"
                   alt="МинСпорт"
                   className="h-14 sm:h-16 md:h-20 w-auto object-contain"
                 />
@@ -216,19 +216,19 @@ export default function Header() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/nffr.png"
+                  src="/logos/nffr.png"
                   alt="НФФР"
                   className="h-4 sm:h-6 md:h-6 w-auto object-contain"
                 />
               </a>
               <a
-                href="https://xn--m1agla.xn--p1ai/"
+                href="https://dosportredstar.omsk.obr55.ru/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/red_star.png"
-                  alt="Кз"
+                  src="/logos/red_star.png"
+                  alt="Красная звезда"
                   className="h-4 sm:h-6 md:h-10 w-auto object-contain"
                 />
               </a>

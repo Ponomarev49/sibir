@@ -17,7 +17,7 @@ export default function Contacts() {
 
           <div className="space-y-4">
             <a
-              href="https://vk.com/clubXXXXX"
+              href="https://vk.com/floorballomsk"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 bg-gray-100 rounded-xl shadow-md hover:bg-blue-50 hover:scale-105 transition transform"
@@ -27,7 +27,7 @@ export default function Contacts() {
             </a>
 
             <a
-              href="https://vk.com/clubYYYYY"
+              href="https://vk.com/ffoo55?from=groups"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 bg-gray-100 rounded-xl shadow-md hover:bg-blue-50 hover:scale-105 transition transform"
@@ -37,7 +37,7 @@ export default function Contacts() {
             </a>
 
             <a
-              href="https://t.me/XXXXX"
+              href="https://t.me/Siberia_Omsk_Region_FFOO"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 bg-gray-100 rounded-xl shadow-md hover:bg-blue-50 hover:scale-105 transition transform"
