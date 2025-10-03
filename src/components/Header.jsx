@@ -84,33 +84,38 @@ export default function Header() {
                     СИБИРЬ ▾
                   </button>
                   {openSibir && (
-                    <div className="absolute left-0 mt-2 w-48 bg-blue-800 text-white border rounded shadow-md z-50">
+                    <div className="absolute left-0 mt-2 w-55 bg-blue-800 text-white border rounded shadow-md z-50">
                       <Link
                         to="/documents"
+                        onClick={() => setOpenSibir(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         Документы
                       </Link>
                       <Link
                         to="/team"
+                        onClick={() => setOpenSibir(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         Клуб
                       </Link>
                       <Link
                         to="/champ_russia"
+                        onClick={() => setOpenSibir(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         Чемпионат России
                       </Link>
                       <Link
                         to="/cup_russia"
+                        onClick={() => setOpenSibir(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         Кубок России 
                       </Link>
                       <Link
                         to="/champ_sfo"
+                        onClick={() => setOpenSibir(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         Чемпионат СФО и УРФО
@@ -142,15 +147,17 @@ export default function Header() {
                     ФЕДЕРАЦИЯ ▾
                   </button>
                   {openFederation && (
-                    <div className="absolute left-0 mt-2 w-48 bg-blue-800 text-white border rounded shadow-md z-50">
+                    <div className="absolute left-0 mt-2 w-55 bg-blue-800 text-white border rounded shadow-md z-50">
                       <Link
                         to="/league"
+                        onClick={() => setOpenFederation(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         ЛФЛ Омск
                       </Link>
                       <Link
                         to="/dfl"
+                        onClick={() => setOpenFederation(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         Первенство ДФЛ Омск
@@ -161,6 +168,10 @@ export default function Header() {
 
                 <Link
                   to="/contacts"
+                  onMouseEnter={() => {
+                    setOpenSibir(false);
+                    setOpenFederation(false);
+                  }}
                   className="font-semibold text-lg sm:text-xl md:text-2xl hover:text-gray-300 flex items-center"
                 >
                   КОНТАКТЫ
