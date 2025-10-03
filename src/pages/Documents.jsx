@@ -3,8 +3,8 @@ import React, { useState } from "react";
 export default function Documents() {
   // Сюда добавляем файлы PDF
   const [documents] = useState([
-    { name: "Свидельство федерации флорбола Омской Области", url: "../public/docs/SVIDETEL_STVO_FEDERATsIYa_FLORBOLA_OMSKOI_774_OBLASTI.pdf" },
-    { name: "Сибирь", url: "../public/docs/Sibir.pdf" }
+    { name: "Свидельство федерации флорбола Омской Области", url: "assets/docs/SVIDETEL_STVO_FEDERATsIYa_FLORBOLA_OMSKOI_774_OBLASTI.pdf" },
+    { name: "Сибирь", url: "assets/docs/Sibir.pdf" }
   ]);
 
   return (
