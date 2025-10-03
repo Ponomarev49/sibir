@@ -8,13 +8,13 @@ export default function Documents() {
   ]);
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-4 space-y-6">
-      <h1 className="text-4xl font-extrabold text-blue-800 drop-shadow-md text-center">
+    <div className="max-w-4xl mx-auto px-4 pt-24 pb-12 min-h-screen flex flex-col">
+      <h1 className="text-4xl font-extrabold text-blue-800 drop-shadow-md text-center mb-8">
         Документы команды
       </h1>
 
       {/* Список документов в колонку */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 flex-grow">
         {documents.map((doc, i) => (
           <div
             key={i}

@@ -18,7 +18,7 @@ export default function Header() {
         />
       )}
 
-      <header className="fixed top-0 left-0 w-full z-50 bg-blue-800 text-white shadow-md transition-all duration-300">
+      <header className="fixed top-0 left-0 w-full z-50 bg-[#0A2E6B] text-white shadow-md transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24">
             {/* Левый блок: Логотип + соцсети */}
@@ -84,7 +84,7 @@ export default function Header() {
                     СИБИРЬ ▾
                   </button>
                   {openSibir && (
-                    <div className="absolute left-0 mt-2 w-55 bg-blue-800 text-white border rounded shadow-md z-50">
+                    <div className="absolute left-0 mt-2 w-55 bg-[#0A2E6B] text-white border rounded shadow-md z-50">
                       <Link
                         to="/documents"
                         onClick={() => setOpenSibir(false)}
@@ -147,7 +147,7 @@ export default function Header() {
                     ФЕДЕРАЦИЯ ▾
                   </button>
                   {openFederation && (
-                    <div className="absolute left-0 mt-2 w-55 bg-blue-800 text-white border rounded shadow-md z-50">
+                    <div className="absolute left-0 mt-2 w-55 bg-[#0A2E6B] text-white border rounded shadow-md z-50">
                       <Link
                         to="/league"
                         onClick={() => setOpenFederation(false)}
@@ -165,13 +165,14 @@ export default function Header() {
                     </div>
                   )}
                 </div>
+                
 
                 <Link
                   to="/contacts"
                   onMouseEnter={() => {
-                    setOpenSibir(false);
-                    setOpenFederation(false);
-                  }}
+                  setOpenSibir(false);
+                  setOpenFederation(false);
+                }}
                   className="font-semibold text-lg sm:text-xl md:text-2xl hover:text-gray-300 flex items-center"
                 >
                   КОНТАКТЫ
