@@ -4,7 +4,7 @@ export default function MainPage() {
   return (
     <div className="relative w-full h-screen pt-24">
       <img
-        src="/team.jpg"
+        src="assets/team.jpg"
         alt="Команда Сибирь"
         className="w-full h-full object-cover object-center"
       />
