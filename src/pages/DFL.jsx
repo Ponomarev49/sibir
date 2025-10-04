@@ -145,7 +145,7 @@ export default function League() {
     }).sort((a,b)=>b.points - a.points || b.wins - a.wins);
 
     return (
-      <div key={group.name} className="space-y-4">
+      <div key={group.name} className="space-y-4 min-h-screen">
         {!hideName && <h3 className="text-3xl font-bold text-blue-700">{group.name}</h3>}
         <div className="overflow-x-auto flex justify-center">
           <table className="border-collapse border border-gray-400 text-md">

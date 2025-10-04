@@ -3,15 +3,21 @@ import { FaVk, FaTelegramPlane, FaYoutube, FaEnvelope } from "react-icons/fa";
 
 export default function Contacts() {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white py-20">
+    <div className="bg-gradient-to-b from-gray-50 to-white py-20 min-h-screen">
       {/* Контент */}
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Левая колонка — текст и ссылки */}
-        <div className="space-y-6 text-gray-800">
-          <h2 className="text-[34px] font-extrabold text-blue-900">
-            Президент АНО «ОФлК «Сибирь» и ОРФСОО «Федерация флорбола Омской области»
+        <div className=" text-gray-800">
+          <h2 className="text-[32px] font-extrabold text-blue-900">
+            Президент
           </h2>
-          <p className="text-[32px] font-semibold">
+          <h2 className="text-[24px] font-extrabold text-blue-900">
+            АНО «ОФлК «Сибирь»
+          </h2>
+          <h2 className="text-[24px] font-extrabold text-blue-900">
+            ОРФСОО «Федерация флорбола Омской области»
+          </h2>
+          <p className="py-5 text-[32px] font-semibold">
             Брюханов Дмитрий Сергеевич
           </p>
 
@@ -47,7 +53,7 @@ export default function Contacts() {
             </a>
 
             <a
-              href="https://youtube.com/XXXXX"
+              href="https://www.youtube.com/@floorballomsk55"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 bg-gray-100 rounded-xl shadow-md hover:bg-blue-50 hover:scale-105 transition transform"

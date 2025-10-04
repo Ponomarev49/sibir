@@ -30,7 +30,7 @@ export const staff = [
   {
     firstName: "Полина",
     lastName: "Ренева",
-    position: "Пресс-аташе",
+    position: "Пресс-атташе",
     photo: "assets/players/ренева.jpg",
     number: null,
   },
@@ -51,6 +51,13 @@ export const goalkeepers = [
     position: "Вратарь",
     photo: "assets/players/фадеев.jpg",
     number: 34,
+  },
+  {
+    firstName: "Егор",
+    lastName: "Шадрин",
+    position: "Вратарь",
+    photo: "assets/players/шадрин.jpg",
+    number: 27,
   }
 ];
 

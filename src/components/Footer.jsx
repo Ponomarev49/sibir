@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A2E6B] text-white mt-12">
+    <footer className="bg-[#0A2E6B] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
@@ -67,7 +67,7 @@ export default function Footer() {
 
         {/* Нижняя полоса */}
         <div className="mt-8 border-t border-white/30 pt-4 text-center text-sm text-gray-300">
-          © 2025 ФК "Сибирь" — Все права защищены
+          © 2025 АНО "ОФлК Сибирь" — Все права защищены
         </div>
       </div>
     </footer>

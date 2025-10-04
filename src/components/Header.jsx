@@ -86,7 +86,7 @@ export default function Header() {
                   {openSibir && (
                     <div className="absolute left-0 mt-2 w-55 bg-[#0A2E6B] text-white border rounded shadow-md z-50">
                       <Link
-                        to="/documents"
+                        to="/documents_sibir"
                         onClick={() => setOpenSibir(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
@@ -113,13 +113,13 @@ export default function Header() {
                       >
                         Кубок России 
                       </Link>
-                      <Link
+                      {/* <Link
                         to="/champ_sfo"
                         onClick={() => setOpenSibir(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
                         Чемпионат СФО и УРФО
-                      </Link>
+                      </Link> */}
                     </div>
                   )}
                 </div>
@@ -149,7 +149,28 @@ export default function Header() {
                   {openFederation && (
                     <div className="absolute left-0 mt-2 w-55 bg-[#0A2E6B] text-white border rounded shadow-md z-50">
                       <Link
-                        to="/league"
+                        to="/doping"
+                        onClick={() => setOpenSibir(false)}
+                        className="block px-4 py-2 hover:bg-blue-400"
+                      >
+                        Антидопинг
+                      </Link>
+                      <Link
+                        to="/education"
+                        onClick={() => setOpenSibir(false)}
+                        className="block px-4 py-2 hover:bg-blue-400"
+                      >
+                        Образование
+                      </Link>
+                      <Link
+                        to="/documents_federation"
+                        onClick={() => setOpenSibir(false)}
+                        className="block px-4 py-2 hover:bg-blue-400"
+                      >
+                        Документы
+                      </Link>
+                      <Link
+                        to="/lfl"
                         onClick={() => setOpenFederation(false)}
                         className="block px-4 py-2 hover:bg-blue-400"
                       >
@@ -176,6 +197,16 @@ export default function Header() {
                   className="font-semibold text-lg sm:text-xl md:text-2xl hover:text-gray-300 flex items-center"
                 >
                   КОНТАКТЫ
+                </Link>
+                <Link
+                  to="/news"
+                  onMouseEnter={() => {
+                  setOpenSibir(false);
+                  setOpenFederation(false);
+                }}
+                  className="font-semibold text-lg sm:text-xl md:text-2xl hover:text-gray-300 flex items-center"
+                >
+                   НОВОСТИ
                 </Link>
               </nav>
 
@@ -234,7 +265,7 @@ export default function Header() {
                 />
               </a>
               <a
-                href="https://dosportredstar.omsk.obr55.ru/"
+                href="https://vk.com/red_star_omsk55"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -320,6 +351,12 @@ export default function Header() {
                 className="block py-1 font-medium hover:text-gray-300"
               >
                 КОНТАКТЫ
+              </Link>
+              <Link
+                to="/news"
+                className="block py-1 font-medium hover:text-gray-300"
+              >
+                НОВОСТИ
               </Link>
             </div>
           )}
