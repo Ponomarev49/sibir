@@ -14,6 +14,8 @@ import DFL from "./pages/DFL";
 import Documents_sibir from "./pages/Documents_sibir";
 import Documents_federation from "./pages/Documents_federation";
 import ScrollToTop from "./components/ScrollToTop";
+import Partners from "./components/Partners"
+import ClubShowcase from "./components/Random_players"
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path="/documents_sibir" element={<Documents_sibir />} />
         <Route path="/documents_federation" element={<Documents_federation />} />
       </Routes>
+      <ClubShowcase/>
+      <Partners/>
       <Footer />
     </Router>
   );

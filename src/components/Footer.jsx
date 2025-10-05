@@ -44,17 +44,19 @@ export default function Footer() {
           {/* Ссылки — Сибирь */}
           <div className="flex flex-col items-center md:items-start space-y-2">
             <h3 className="font-semibold text-lg mb-2">Сибирь</h3>
-            <Link to="/documents" className="hover:text-gray-300">Документы</Link>
+            <Link to="/documents_federation" className="hover:text-gray-300">Документы</Link>
             <Link to="/team" className="hover:text-gray-300">Клуб</Link>
             <Link to="/champ_russia" className="hover:text-gray-300">Чемпионат России</Link>
             <Link to="/cup_russia" className="hover:text-gray-300">Кубок России</Link>
-            <Link to="/champ_sfo" className="hover:text-gray-300">Чемпионат СФО и УРФО</Link>
           </div>
 
           {/* Ссылки — Федерация */}
           <div className="flex flex-col items-center md:items-start space-y-2">
             <h3 className="font-semibold text-lg mb-2">Федерация</h3>
-            <Link to="/league" className="hover:text-gray-300">ЛФЛ Омск</Link>
+            <Link to="/doping" className="hover:text-gray-300">Антидопинг</Link>
+            <Link to="/education" className="hover:text-gray-300">Образование</Link>
+            <Link to="/documents_federation" className="hover:text-gray-300">Документы</Link>
+            <Link to="/lfl" className="hover:text-gray-300">ЛФЛ Омск</Link>
             <Link to="/dfl" className="hover:text-gray-300">Первенство ДФЛ Омск</Link>
           </div>
 
