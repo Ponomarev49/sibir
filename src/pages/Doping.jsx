@@ -4,7 +4,7 @@ export default function Doping() {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center pt-24 px-4">
       {/* Заголовок */}
-      <h1 className="text-[32px] font-extrabold text-blue-900 mb-6 text-center">
+      <h1 className="text-[36px] font-bold text-blue-900 mb-8 text-center">
         Антидопинг
       </h1>
 

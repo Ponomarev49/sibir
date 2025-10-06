@@ -69,7 +69,7 @@ export default function Footer() {
 
         {/* Нижняя полоса */}
         <div className="mt-8 border-t border-white/30 pt-4 text-center text-sm text-gray-300">
-          © 2025 АНО "ОФлК Сибирь" — Все права защищены
+          © 2025 АНО «ОФлК Сибирь» — Все права защищены  
         </div>
       </div>
     </footer>

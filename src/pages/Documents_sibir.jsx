@@ -3,13 +3,15 @@ import React, { useState } from "react";
 export default function Documents_sibir() {
   // Сюда добавляем файлы PDF
   const [documents] = useState([
-    { name: "Свидетельство", url: "assets/docs/SVIDETEL_STVO_FEDERATsIYa_FLORBOLA_OMSKOI_774_OBLASTI.pdf" },
-    { name: "Сибирь", url: "assets/docs/Sibir.pdf" }
+    { name: "Благодарность", url: "assets/docs/sibir/Sibir.pdf" },
+    { name: "Правительство", url: "assets/docs/sibir/PRAVITEL_STVO.pdf" },
+    { name: "Реквизиты АНО «ОФлК Сибирь»", url: "assets/docs/sibir/Rekvizity_ANO_OFlK_Sibir.pdf" },
+    { name: "Устав АНО «ОФлК Сибирь»", url: "assets/docs/sibir/Ustav_ANO_OFK_Sibir.pdf" }
   ]);
 
   return (
     <div className="max-w-4xl mx-auto px-4 pt-24 pb-12 min-h-screen flex flex-col">
-      <h1 className="text-4xl font-extrabold text-blue-800 drop-shadow-md text-center mb-8">
+      <h1 className="text-[36px] font-bold text-blue-900 mb-8 text-center">
         Документы
       </h1>
 

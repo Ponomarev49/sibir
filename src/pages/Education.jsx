@@ -4,7 +4,7 @@ export default function Education() {
   return (
     <div className="min-h-screen bg-white flex flex-col pt-24">
       {/* Заголовок сверху */}
-      <h1 className="text-[32px] font-extrabold text-blue-900 text-center">
+      <h1 className="text-[36px] font-bold text-blue-900 mb-8 text-center">
         Образование
       </h1>
 

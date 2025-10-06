@@ -3,13 +3,14 @@ import React, { useState } from "react";
 export default function Documents_federation() {
   // Сюда добавляем файлы PDF
   const [documents] = useState([
-    { name: "Свидетельство", url: "assets/docs/SVIDETEL_STVO_FEDERATsIYa_FLORBOLA_OMSKOI_774_OBLASTI.pdf" },
-    { name: "Сибирь", url: "assets/docs/Sibir.pdf" }
+    { name: "Свидетельство", url: "assets/docs/federation/SVIDETEL_STVO_FEDERATsIYa_FLORBOLA_OMSKOI_774_OBLASTI.pdf" },
+    { name: "Реквизиты Федерации Флорбола Омской Области", url: "assets/docs/federation/Rekvizity_Federatsia_florbola.pdf" },
+    { name: "Устав Федерации Флорбола Омской Области", url: "assets/docs/federation/USTAV_Federaia_florbola_Omskoi_774_oblasti.pdf" }
   ]);
 
   return (
     <div className="max-w-4xl mx-auto px-4 pt-24 pb-12 min-h-screen flex flex-col">
-      <h1 className="text-4xl font-extrabold text-blue-800 drop-shadow-md text-center mb-8">
+      <h1 className="text-[36px] font-bold text-blue-900 mb-8 text-center">
         Документы
       </h1>
 

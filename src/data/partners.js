@@ -21,7 +21,7 @@ export const partners = [
     {
       name: "Гринвич",
       img: "assets/partners/grinvich.png",
-      link: "",
+      link: "https://vk.com/away.php?to=https%3A%2F%2Fragrinvich.ru&utf=1",
       alt: "Гринвич",
     },
     {
@@ -63,7 +63,7 @@ export const partners = [
     {
       name: "Вратарская школа",
       img: "assets/partners/вьюхин.png",
-      link: "",
+      link: "https://vk.com/away.php?to=http%3A%2F%2Fviuhin.ru%2F&utf=1",
       alt: "Вратарская школа",
     },
     {
@@ -83,5 +83,23 @@ export const partners = [
       img: "assets/partners/crystal.png",
       link: "https://vk.com/crystal_balet",
       alt: "Crystal",
+    },
+    {
+      name: "Тимхаус",
+      img: "assets/partners/тимхаус.png",
+      link: "https://vk.com/timoninroman",
+      alt: "Тимхаус",
+    },
+    {
+      name: "Patenta",
+      img: "assets/partners/patenta.png",
+      link: "https://patenta.ru/",
+      alt: "Patenta",
+    },
+    {
+      name: "Титан",
+      img: "assets/partners/титан.png",
+      link: "https://vk.com/gc_titan",
+      alt: "Титан",
     },
   ];

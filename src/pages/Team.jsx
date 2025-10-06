@@ -4,7 +4,7 @@ import { staff, goalkeepers, defenders, forwards } from "../data/teamData";
 function PlayerCard({ firstName, lastName, position, photo, number }) {
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
-      <img src={photo} alt={lastName} className="w-full h-110 object-contain" />
+      <img src={photo} alt={lastName} className="w-[290px] h-110 object-contain" />
       <div className="py-6 text-center">
         <h3 className="text-[28px] font-bold text-gray-800">
             {number ? `#${number} ` : ""}
@@ -19,7 +19,7 @@ function PlayerCard({ firstName, lastName, position, photo, number }) {
 
 export default function Team() {
   return (
-    <div className="bg-gray-50 min-h-screen pt-24">
+    <div className="bg-gray-50 min-h-screen pt-12">
       <div className="max-w-7xl mx-auto px-4 py-12 space-y-12">
         {/* Тренерский штаб */}
         <Section title="Флорбольный клуб Сибирь (Омская область)" players={staff} />

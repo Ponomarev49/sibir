@@ -3,30 +3,40 @@ import { staff, goalkeepers, defenders, forwards } from "../data/teamData";
 import { Link } from "react-router-dom";
 
 export default function ClubShowcase() {
-  // Объединяем всех в одну коллекцию
   const allPlayers = [...staff, ...goalkeepers, ...defenders, ...forwards];
-
   const [randomPlayers, setRandomPlayers] = useState([]);
 
-  // Функция случайного выбора 5 игроков
   const getRandomPlayers = () => {
     const shuffled = [...allPlayers].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, 5);
+
+    const uniquePlayers = [];
+    const seenNames = new Set();
+
+    for (let player of shuffled) {
+      const fullName = `${player.firstName} ${player.lastName}`;
+      if (!seenNames.has(fullName)) {
+        uniquePlayers.push(player);
+        seenNames.add(fullName);
+      }
+      if (uniquePlayers.length === 5) break;
+    }
+
+    return uniquePlayers;
   };
 
+
   useEffect(() => {
-    setRandomPlayers(getRandomPlayers()); // начальная загрузка
+    setRandomPlayers(getRandomPlayers());
     const interval = setInterval(() => {
-      setRandomPlayers(getRandomPlayers()); // обновление каждые 5 сек
+      setRandomPlayers(getRandomPlayers());
     }, 5000);
 
-    return () => clearInterval(interval); // очистка таймера
+    return () => clearInterval(interval);
   }, []);
-
 
   function MiniPlayerCard({ firstName, lastName, position, photo, number }) {
     return (
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+      <div className="bg-white/90 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
         {/* Контейнер с фиксированной высотой */}
         <div className="w-full h-100 overflow-hidden">
           <img
@@ -47,11 +57,20 @@ export default function ClubShowcase() {
     );
   }
 
-
   return (
-    <section className="bg-gray-50 py-12">
-      <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-blue-800 mb-8">Наш клуб</h2>
+    <section className="relative py-12">
+      {/* Фоновая картинка */}
+      <img
+        src="assets/random.jpg"  // <-- сюда подставь свой путь к картинке
+        alt="Фон клуба"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      {/* Затемнение поверх картинки */}
+      <div className="absolute inset-0 bg-black/70"></div>
+
+      {/* Контент поверх */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-white">
+        <h2 className="text-4xl font-bold mb-8">Наш клуб</h2>
 
         {/* Сетка с карточками */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 mb-10">
@@ -66,7 +85,7 @@ export default function ClubShowcase() {
         {/* Кнопка "Клуб" */}
         <Link
           to="/team"
-          className="inline-block px-6 py-3 bg-[#0046AD] text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition"
+          className="inline-block px-8 py-4 bg-[#0046AD] text-white text-xl font-bold rounded-xl shadow-lg hover:bg-blue-700 transition"
         >
           Клуб
         </Link>
