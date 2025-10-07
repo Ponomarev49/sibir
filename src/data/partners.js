@@ -50,7 +50,7 @@ export const partners = [
     },
         {
       name: "Riegel",
-      img: "assets/partners/армада.png",
+      img: "assets/partners/riegel.png",
       link: "https://vk.com/rgl55",
       alt: "Riegel",
     },

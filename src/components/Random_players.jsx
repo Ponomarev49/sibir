@@ -36,22 +36,23 @@ export default function ClubShowcase() {
 
   function MiniPlayerCard({ firstName, lastName, position, photo, number }) {
     return (
-      <div className="bg-white/90 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+      <div className="bg-white/90 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1
+      w-[95px] sm:w-[115px] md:w-[145px] lg:w-[185px]  xl:w-[231px]">
         {/* Контейнер с фиксированной высотой */}
-        <div className="w-full h-100 overflow-hidden">
+        <div className="w-[95px] h-[160px] sm:w-[115px] sm:h-[200px] md:w-[145px] md:h-[250px] lg:w-[185px] lg:h-[320px]  xl:w-[231px] xl:h-[400px] overflow-hidden">
           <img
             src={photo}
             alt={lastName}
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="py-3 text-center">
-          <h3 className="text-[24px] font-bold text-gray-800">
+        <div className="py-3 sm:py-2 text-center">
+          <h3 className="text-[10px] sm:text-[12px] md:text-[16px] lg:text-[20px]  xl:text-[24px] font-bold text-gray-800">
             {number ? `#${number} ` : ""}
             {lastName}
           </h3>
-          <h3 className="text-[24px] font-bold text-gray-800">{firstName}</h3>
-          <p className="text-[18px] text-gray-500">{position}</p>
+          <h3 className="text-[10px] sm:text-[12px] md:text-[16px] lg:text-[20px]  xl:text-[24px] font-bold text-gray-800">{firstName}</h3>
+          <p className="text-[8px] sm:text-[11px] md:text-[14px] lg:text-[16px]  xl:text-[18px] text-gray-500">{position}</p>
         </div>
       </div>
     );
@@ -70,22 +71,21 @@ export default function ClubShowcase() {
 
       {/* Контент поверх */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-white">
-        <h2 className="text-4xl font-bold mb-8">Наш клуб</h2>
+        <h2 className="text-[24px] sm:text-[28px] md:text-[30px] lg:text-[32px] xl:text-[36px] font-bold mb-8">Наш клуб</h2>
 
         {/* Сетка с карточками */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 mb-10">
-          {randomPlayers.map((player) => (
-            <MiniPlayerCard
-              key={`${player.lastName}-${player.number}`}
-              {...player}
-            />
+        <div className="flex justify-center sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-5 mb-10">
+        {randomPlayers
+          .slice(0, window.innerWidth < 768 ? 3 : 5)
+          .map((player) => (
+            <MiniPlayerCard key={player.lastName} {...player} />
           ))}
         </div>
 
         {/* Кнопка "Клуб" */}
         <Link
           to="/team"
-          className="inline-block px-8 py-4 bg-[#0046AD] text-white text-xl font-bold rounded-xl shadow-lg hover:bg-blue-700 transition"
+          className="inline-block px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 xl:px-8 xl:py-4 bg-[#0046AD] text-white text-[12px] sm:text-[18px] md:text-[18px] lg:text-[20px] xl:text-[20px] font-bold rounded-xl shadow-lg hover:bg-blue-700 transition"
         >
           Клуб
         </Link>

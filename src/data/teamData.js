@@ -117,14 +117,14 @@ export const defenders = [
     lastName: "Танмурзинов",
     position: "Защитник",
     photo: "assets/players/танмурзинов.jpg",
-    number: 99,
+    number: 21,
   },
   {
     firstName: "Руслан",
     lastName: "Турабаев",
     position: "Защитник",
     photo: "assets/players/турабаев.jpg",
-    number: 99,
+    number: 58,
   }
 ];
 

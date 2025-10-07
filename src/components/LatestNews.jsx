@@ -17,23 +17,25 @@ export default function LatestNews() {
             <Link
               key={item.id}
               to={`/news/${item.id}`}
-              className="group flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition transform hover:-translate-y-0.5"
+              className="group flex flex-row bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition transform hover:-translate-y-0.5"
             >
               {/* Фото слева */}
-              <div className="md:w-1/4 h-20 md:h-40 flex-shrink-0">
+              <div className="w-1/3 h-30 sm:h-40 md:h-48 flex-shrink-0 bg-white">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
               {/* Текст справа */}
-              <div className="p-3 md:p-4 flex flex-col justify-center md:w-3/4 text-center md:text-left">
-                <h3 className="text-lg md:text-xl font-semibold text-gray-800 group-hover:text-blue-700 transition">
+              <div className="p-3 sm:p-4 flex flex-col justify-center w-2/3 sm:w-3/4 text-left">
+                <h3 className="text-[15px] sm:text-[17px] md:text-[20px] font-semibold text-gray-800 group-hover:text-blue-700 transition">
                   {item.title}
                 </h3>
-                <p className="text-gray-500 mt-1 text-sm md:text-base">{item.date}</p>
+                <p className="text-gray-500 mt-1 text-sm md:text-base">
+                  {item.date}
+                </p>
               </div>
             </Link>
           ))}
