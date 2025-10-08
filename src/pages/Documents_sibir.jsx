@@ -10,7 +10,7 @@ export default function Documents_sibir() {
   ]);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 pt-24 pb-12 min-h-screen flex flex-col">
+    <div className="max-w-4xl mx-auto px-4 pt-18 pb-12 min-h-screen flex flex-col">
       <h1 className="text-[36px] font-bold text-blue-900 mb-8 text-center">
         Документы
       </h1>

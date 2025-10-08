@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Doping() {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center pt-24 px-4">
+    <div className="min-h-screen bg-white flex flex-col items-center px-4 pt-18">
       {/* Заголовок */}
       <h1 className="text-[36px] font-bold text-blue-900 mb-8 text-center">
         Антидопинг

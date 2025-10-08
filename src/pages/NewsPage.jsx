@@ -21,7 +21,7 @@ export default function NewsPage() {
   }
 
   return (
-    <section className="bg-gray-50 py-16 min-h-screen pt-24">
+    <section className="bg-gray-50 pt-18 pb-16 min-h-screen">
       <div className="max-w-5xl mx-auto px-4">
         <Link
           to="/news"

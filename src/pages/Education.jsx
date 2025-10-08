@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div className="min-h-screen bg-white flex flex-col pt-24 px-4">
+    <div className="min-h-screen bg-white flex flex-col px-4 pt-18">
       {/* Заголовок */}
       <h1 className="text-[22px] sm:text-[25px] md:text-[30px] lg:text-[34px] xl:text-[38px] font-bold text-blue-900 mb-8 text-center">
         Образование

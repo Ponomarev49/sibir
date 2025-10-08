@@ -19,8 +19,8 @@ function PlayerCard({ firstName, lastName, position, photo, number }) {
 
 export default function Team() {
   return (
-    <div className="bg-gray-50 min-h-screen pt-12">
-      <div className="max-w-7xl mx-auto px-4 py-12 space-y-12">
+    <div className="bg-gray-50 min-h-screen pt-18">
+      <div className="max-w-7xl mx-auto px-4 pb-12 space-y-12">
         {/* Тренерский штаб */}
         <Section title="Флорбольный клуб Сибирь (Омская область)" players={staff} />
 

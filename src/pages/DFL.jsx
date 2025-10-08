@@ -178,7 +178,7 @@ export default function League() {
   }
 
   return (
-    <div className="text-center space-y-14 pt-30">
+    <div className="text-center space-y-14 pt-18">
       <h1 className="text-5xl font-extrabold text-blue-800 drop-shadow-md">Детская флорбольная лига</h1>
 
       {/* Вкладки категорий */}

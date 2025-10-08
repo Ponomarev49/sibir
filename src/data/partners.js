@@ -102,4 +102,10 @@ export const partners = [
       link: "https://vk.com/gc_titan",
       alt: "Титан",
     },
+    {
+      name: "Media Pro",
+      img: "assets/partners/media.png",
+      link: "https://vk.com/mediaproomsk",
+      alt: "Media Pro",
+    },
   ];
