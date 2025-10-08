@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 export default function NewsList() {
   return (
-    <section className="bg-gray-50 py-16 min-h-screen pt-24">
+    <section className="bg-gray-50 pt-20 pb-20 min-h-screen">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-blue-800 mb-12 text-center">
+        <h2 className="text-[30px] sm:text-[32px] md:text-[34px] lg:text-[36px] xl:text-[40px] font-bold text-blue-900 mb-12 text-center">
           Новости
         </h2>
 

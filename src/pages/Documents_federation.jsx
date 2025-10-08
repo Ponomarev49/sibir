@@ -9,8 +9,8 @@ export default function Documents_federation() {
   ]);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 pt-24 pb-12 min-h-screen flex flex-col">
-      <h1 className="text-[36px] font-bold text-blue-900 mb-8 text-center">
+    <div className="max-w-4xl mx-auto px-4 pt-20 min-h-screen flex flex-col">
+      <h1 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-bold text-blue-900 mb-8 text-center">
         Документы
       </h1>
 

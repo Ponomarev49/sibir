@@ -18,14 +18,23 @@ import ClubShowcase from "./components/Random_players"
 import NewsList from "./pages/NewsList";
 import NewsPage from "./pages/NewsPage";
 import LatestNews from "./components/LatestNews";
+import YandexMetrika from './components/YandexMetrika';
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Router>
+      <Helmet>
+        <title>Омский Флорбол</title>
+        <meta name="description" content="Официальная страница Омского флорбола. Матчи ФлК Сибирь, матчи ДФЛ и ЛФЛ Омск, новости Федерации Флорбола Омской Области." />
+        <meta name="keywords" content="флорбол, Сибирь, чемпионат, сайт, матчи, таблица, турнир" />
+        <link rel="canonical" href="https://floorballomsk.ru/" />
+        <meta name="yandex-verification" content="4d24070d6a03722c" />
+      </Helmet>
+      <YandexMetrika />
       <ScrollToTop />
       <Header />
       <Routes>
-        {/* <Route path="/" element={<MainPage />} /> */}
         <Route
           path="/"
           element={
@@ -33,6 +42,7 @@ function App() {
               <MainPage />
               <LatestNews />
               <ClubShowcase />
+              <Partners/>
             </>
           }
         />
@@ -49,7 +59,6 @@ function App() {
         <Route path="/documents_sibir" element={<Documents_sibir />} />
         <Route path="/documents_federation" element={<Documents_federation />} />
       </Routes>
-      <Partners/>
       <Footer />
     </Router>
   );

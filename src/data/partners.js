@@ -13,6 +13,12 @@ export const partners = [
       alt: "Keeper",
     },
     {
+      name: "Большие детали",
+      img: "assets/partners/детали.png",
+      link: "http://www.bigdetails.ru",
+      alt: "Большие детали",
+    },
+    {
       name: "Хокк",
       img: "assets/partners/hock.png",
       link: "https://vk.com/xokk_ru",
@@ -23,12 +29,6 @@ export const partners = [
       img: "assets/partners/grinvich.png",
       link: "https://vk.com/away.php?to=https%3A%2F%2Fragrinvich.ru&utf=1",
       alt: "Гринвич",
-    },
-    {
-      name: "Большие детали",
-      img: "assets/partners/детали.png",
-      link: "http://www.bigdetails.ru",
-      alt: "Большие детали",
     },
     {
       name: "Армада",
@@ -43,10 +43,10 @@ export const partners = [
       alt: "Aqua Avers",
     },
     {
-      name: "Додо пицца",
-      img: "assets/partners/dodo.png",
-      link: "https://dodopizza.ru/omsk",
-      alt: "Додо",
+      name: "Альтаир",
+      img: "assets/partners/альтаир.png",
+      link: "https://vk.com/altair_omsk",
+      alt: "Альтаир",
     },
         {
       name: "Riegel",
@@ -101,5 +101,29 @@ export const partners = [
       img: "assets/partners/титан.png",
       link: "https://vk.com/gc_titan",
       alt: "Титан",
+    },
+    {
+      name: "Media Pro",
+      img: "assets/partners/media.png",
+      link: "https://vk.com/mediaproomsk",
+      alt: "Media Pro",
+    },
+    {
+      name: "Фаст Принт",
+      img: "assets/partners/фаст принт.png",
+      link: "https://vk.com/fastprint55",
+      alt: "Фаст Принт",
+    },
+    {
+      name: "Шато",
+      img: "assets/partners/Shato.png",
+      link: "https://bolshoi.shato55.ru/kejtering/",
+      alt: "Шато",
+    },
+    {
+      name: "Media Pro",
+      img: "assets/partners/Group 146.png",
+      link: "https://wa.me/message/KAFGME7FIGXLO1",
+      alt: "Media Pro",
     },
   ];

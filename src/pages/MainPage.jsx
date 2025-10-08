@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MainPage() {
   return (
-    <div className="relative w-full h-[100dvh] pt-24">
+    <div className="relative w-full h-[100dvh] pt-12">
       {/* Фоновое изображение */}
       <img
         src="assets/team.jpg"
