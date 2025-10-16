@@ -1,5 +1,6 @@
 import React from "react";
 import { FaVk, FaTelegramPlane, FaYoutube, FaEnvelope, FaMedal } from "react-icons/fa";
+import { FaVk, FaTelegramPlane, FaYoutube, FaEnvelope, FaMedal } from "react-icons/fa";
 
 export default function Contacts() {
   return (
@@ -14,6 +15,12 @@ export default function Contacts() {
             <h2 className="text-[24px] font-extrabold text-blue-900">ОРФСОО «Федерация флорбола Омской области»</h2>
           </div>
 
+          {/* Фото */}
+          <img
+            src="assets/players/президент.jpg"
+            alt="Брюханов Дмитрий Сергеевич"
+            className="w-full max-w-[400px] md:max-w-[500px] rounded-lg shadow-lg hover:scale-105 transition duration-300"
+          />
           {/* Фото */}
           <img
             src="assets/players/президент.jpg"
@@ -124,4 +131,5 @@ function SocialLink({ href, icon, text }) {
     </a>
   );
 }
+
 
